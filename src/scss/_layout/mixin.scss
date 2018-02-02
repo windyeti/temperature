@@ -1,0 +1,61 @@
+
+@mixin aboutItemImage($aboutItems) {
+	$count : 0;
+	@each $item in $aboutItems {
+		.aboutUs__icon_#{$item} {
+			background-position-x: #{$count}px;
+			$count : $count - 65;
+		}
+	};
+};
+
+@mixin project($value) {
+	@for $i from 0 to $value {
+		.latestProjects__blockImg_#{$i} {
+			background: url("../images/project0#{$i}.jpg") 0 0 no-repeat;
+		}
+	}
+};
+
+@mixin advantages($items) {
+	$count : 0;
+	@each $item in $items {
+		.mobile__icon_#{$item} {
+			background: url('../images/iconMobile.svg') $count 0px no-repeat;
+		};
+		$count : $count - 120px;
+	};
+};
+
+@mixin posts($items) {
+	@each $item in $items {
+		.posts__img_#{$item} {
+			background: url('../images/posts_#{$item}.jpg') 50% 0 no-repeat;
+		}
+	}
+}
+@mixin postsHover($items) {
+	@each $item in $items {
+		.posts__item {
+			&:hover .posts__img_#{$item} {
+				background: url('../images/posts_#{$item}.jpg') 50% -220px no-repeat;
+			}
+			&:hover .posts__day {
+				background-color: $bej;
+			}
+			&:hover .posts__month {
+				background-color: #a48d72;
+			}
+			&:hover .posts__about {
+				background-color: #362f2d;
+			}
+			&:hover .posts__about__head {
+				color: $bej;
+			}
+			&:hover .posts__about__text {
+				color: #fff;
+			}
+
+		}
+	}
+}

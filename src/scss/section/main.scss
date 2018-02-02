@@ -1,0 +1,55 @@
+.wrapper {
+	// max-width: 600px;
+	min-width: 400px;
+	margin: 0 300px;
+	border: 1px solid lightblue;
+	text-align: center;
+}
+.summer2010 {
+	padding-top: 20px;
+}
+.celsi,
+.faringat,
+.thermometer {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 20px;
+	width: 40px;
+}
+// .celsi {
+// 	text-align: left;
+// }
+.thermometer {
+	width: 20px;
+	height: 210px;
+	background-color: red;
+}
+.meas {
+	position: relative;
+	height: 100%;
+}
+.around {
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	background-color: red;
+	position: absolute;
+	z-index: -1;
+	bottom: -25px;
+	left: -5px;
+}
+.blue {
+	width: 100%;
+	height: 50%;
+	background-color: blue;
+}
+.point {
+	position: absolute;
+	top: 95px;
+	left: 50%;
+	width: 40px;
+	height: 10px;
+	margin-left: -20px;
+	// margin-top: -50%;
+	background-color: darkred;
+}

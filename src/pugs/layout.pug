@@ -1,0 +1,15 @@
+include _common/variables.pug
+include _common/mixins.pug
+
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		link(rel="stylesheet", href="css/main.css")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="shortcut icon" href="/favicon.ico" type="image/x-icon")
+		block title
+			title Страница шаблона
+	body
+		block main
+		script(src='js/main.js')
